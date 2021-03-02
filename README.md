@@ -8,6 +8,8 @@ Shopify Storefront Graphql Client Package
 
 import yoShopifyGraphqlClient, { fetchProducts } from "@benline/yoShopifyGraphqlClient";
 
+```
+
 ```typescript
 
 const makeMeAShopifyClient = yoShopifyGraphqlClient("Your Shopify URL", "YOUR ACCESS TOKEN"); 
