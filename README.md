@@ -3,6 +3,17 @@ Shopify Storefront Graphql Client Package
 
 ```typescript
 
+const makeMeAShopifyClient = yoShopifyGraphqlClient("Your Shopify URL", "YOUR ACCESS TOKEN"); 
+
+makeMeAShopifyClient.query({query: fetchProducts}).then(({data}) => {
+    const products = data.shop.products.edges;
+    // Do things
+    // setState whatever
+})
+
+```
+
+```typescript
 const fetchProducts = gql`
   {
     shop {
@@ -50,13 +61,4 @@ const fetchProducts = gql`
     }
   }
 `;
-
-const makeMeAShopifyClient = yoShopifyGraphqlClient("Your Shopify URL", "YOUR ACCESS TOKEN"); 
-
-makeMeAShopifyClient.query({query: fetchProducts}).then(({data}) => {
-    const products = data.shop.products.edges;
-    // Do things
-    // setState whatever
-})
-
 ```
