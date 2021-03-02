@@ -4,6 +4,10 @@ npm install @benline/yoShopifyGraphqlClient
 
 Shopify Storefront Graphql Client Package
 
+```typescript 
+
+import yoShopifyGraphqlClient, { fetchProducts } from "@benline/yoShopifyGraphqlClient";
+
 ```typescript
 
 const makeMeAShopifyClient = yoShopifyGraphqlClient("Your Shopify URL", "YOUR ACCESS TOKEN"); 
