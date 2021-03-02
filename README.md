@@ -1,4 +1,7 @@
 # yoShopifyGraphqlClient
+
+npm install @benline/yoShopifyGraphqlClient
+
 Shopify Storefront Graphql Client Package
 
 ```typescript
